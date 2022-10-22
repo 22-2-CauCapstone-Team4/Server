@@ -1,6 +1,7 @@
 // index.js
 const express = require("express");
 const mongoose = require("mongoose");
+const { userRouter } = require("./routes");
 
 const app = express();
 
@@ -20,6 +21,7 @@ const server = async () => {
     app.use(express.urlencoded({ extended: true }));
 
     // 라우터 추가
+    app.use("/users", userRouter);
 
     app.listen(PORT, () => {
       console.log(`server listening on port ${PORT}. `);
