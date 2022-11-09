@@ -3,5 +3,14 @@
         "name": "user/createUserInfo",
         "private": false,
         "run_as_system": true
+    },
+    {
+        "name": "user/checkEmailExisted",
+        "private": false
+    },
+    {
+        "name": "user/checkNicknameExisted",
+        "private": false,
+        "run_as_system": true
     }
 ]

@@ -3,12 +3,22 @@
     "database": "AppData",
     "roles": [
         {
-            "name": "readAndWriteAll",
-            "apply_when": {},
+            "name": "owner",
+            "apply_when": {
+                "userId": "%%user.id",
+                "email": "%%user.data.email"
+            },
             "read": true,
             "write": true,
             "insert": true,
             "delete": true,
+            "search": true
+        },
+        {
+            "name": "others",
+            "apply_when": {},
+            "read": true,
+            "write": false,
             "search": true
         }
     ]
