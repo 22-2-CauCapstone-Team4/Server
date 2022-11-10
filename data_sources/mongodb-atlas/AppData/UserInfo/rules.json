@@ -3,6 +3,15 @@
     "database": "AppData",
     "roles": [
         {
+            "name": "others",
+            "apply_when": {},
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "search": true
+        },
+        {
             "name": "owner",
             "apply_when": {
                 "userId": "%%user.id",
@@ -12,13 +21,6 @@
             "write": true,
             "insert": true,
             "delete": true,
-            "search": true
-        },
-        {
-            "name": "others",
-            "apply_when": {},
-            "read": true,
-            "write": false,
             "search": true
         }
     ]

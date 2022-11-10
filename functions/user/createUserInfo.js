@@ -1,8 +1,8 @@
-exports = async function ({id, email, nickname}) {
+exports = async function ({ id, email, nickname }) {
   const userInfos = context.services
-    .get('mongodb-atlas')
-    .db('AppData')
-    .collection('UserInfo');
+    .get("mongodb-atlas")
+    .db("AppData")
+    .collection("UserInfo");
 
   const customUserData = {
     userId: id,
@@ -13,8 +13,8 @@ exports = async function ({id, email, nickname}) {
   try {
     await userInfos.insertOne(customUserData);
   } catch (err) {
-    return {success: false, err: err.message};
+    return { success: false, err: err.message };
   }
 
-  return {customUserData};
+  return { customUserData };
 };
