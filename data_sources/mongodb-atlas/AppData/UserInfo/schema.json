@@ -9,15 +9,15 @@
         "nickname": {
             "bsonType": "string"
         },
-        "userId": {
-            "bsonType": "objectId"
+        "owner_id": {
+            "bsonType": "string"
         }
     },
     "required": [
         "_id",
+        "owner_id",
         "email",
-        "nickname",
-        "userId"
+        "nickname"
     ],
     "title": "UserInfo"
 }

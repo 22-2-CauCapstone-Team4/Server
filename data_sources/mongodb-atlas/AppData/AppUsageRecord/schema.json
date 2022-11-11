@@ -1,0 +1,38 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "appPackageName": {
+            "bsonType": "string",
+            "default": ""
+        },
+        "clickCnt": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "date": {
+            "bsonType": "date"
+        },
+        "hour": {
+            "bsonType": "int"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "usageSec": {
+            "bsonType": "int",
+            "default": 0
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "appPackageName",
+        "date",
+        "hour",
+        "usageSec",
+        "clickCnt"
+    ],
+    "title": "AppUsageRecord"
+}

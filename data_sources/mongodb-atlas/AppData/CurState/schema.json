@@ -1,0 +1,34 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "appPackageName": {
+            "bsonType": "string",
+            "default": ""
+        },
+        "endTIme": {
+            "bsonType": "date"
+        },
+        "endTime": {
+            "bsonType": "date"
+        },
+        "isNowUsingProhibitedApp": {
+            "bsonType": "bool",
+            "default": false
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "startTime": {
+            "bsonType": "date"
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "isNowUsingProhibitedApp",
+        "appPackageName"
+    ],
+    "title": "CurState"
+}

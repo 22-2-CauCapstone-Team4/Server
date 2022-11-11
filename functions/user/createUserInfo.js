@@ -1,11 +1,11 @@
-exports = async function ({ id, email, nickname }) {
+exports = async function ({owner_id, email, nickname}) {
   const userInfos = context.services
     .get("mongodb-atlas")
     .db("AppData")
     .collection("UserInfo");
 
   const customUserData = {
-    userId: id,
+    owner_id,
     email,
     nickname,
   };
@@ -16,5 +16,5 @@ exports = async function ({ id, email, nickname }) {
     return { success: false, err: err.message };
   }
 
-  return { customUserData };
+  return { success: true, customUserData };
 };
