@@ -1,0 +1,8 @@
+{
+    "app_id": "app-lohxv",
+    "config_version": 20210101,
+    "name": "App",
+    "location": "SG",
+    "provider_region": "aws-ap-southeast-1",
+    "deployment_model": "LOCAL"
+}
