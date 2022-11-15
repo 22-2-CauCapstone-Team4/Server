@@ -1,0 +1,39 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "missionCnt": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "nowDoingMissionCnt": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "nowGivingUpCnt": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "userCnt": {
+            "bsonType": "int",
+            "default": 1
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "name",
+        "missionCnt",
+        "userCnt",
+        "nowDoingMissionCnt",
+        "nowGivingUpCnt"
+    ],
+    "title": "Goal"
+}
