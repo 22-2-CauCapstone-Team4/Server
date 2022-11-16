@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "lat": {
+            "bsonType": "float"
+        },
+        "lng": {
+            "bsonType": "float"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "name",
+        "address",
+        "lat",
+        "lng"
+    ],
+    "title": "Place"
+}
