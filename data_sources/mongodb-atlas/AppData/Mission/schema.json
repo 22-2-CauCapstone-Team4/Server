@@ -1,0 +1,54 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "date": {
+            "bsonType": "date"
+        },
+        "dayOfTheWeek": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "endTime": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "goal": {
+            "bsonType": "objectId"
+        },
+        "isActive": {
+            "bsonType": "bool",
+            "default": false
+        },
+        "isRepeated": {
+            "bsonType": "bool",
+            "default": false
+        },
+        "kind": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "place": {
+            "bsonType": "objectId"
+        },
+        "startTime": {
+            "bsonType": "int",
+            "default": 0
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "name",
+        "kind",
+        "isActive",
+        "isRepeated"
+    ],
+    "title": "Mission"
+}

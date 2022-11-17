@@ -1,0 +1,14 @@
+{
+    "goal": {
+        "ref": "#/relationship/mongodb-atlas/AppData/Goal",
+        "source_key": "goal",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "place": {
+        "ref": "#/relationship/mongodb-atlas/AppData/Place",
+        "source_key": "place",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}

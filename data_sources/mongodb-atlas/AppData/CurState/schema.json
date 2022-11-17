@@ -3,9 +3,18 @@
         "_id": {
             "bsonType": "objectId"
         },
+        "appName": {
+            "bsonType": "string"
+        },
         "appPackageName": {
             "bsonType": "string",
             "default": ""
+        },
+        "endAppTime": {
+            "bsonType": "date"
+        },
+        "endPhoneTime": {
+            "bsonType": "date"
         },
         "endTIme": {
             "bsonType": "date"
@@ -20,6 +29,12 @@
         "owner_id": {
             "bsonType": "string"
         },
+        "startAppTime": {
+            "bsonType": "date"
+        },
+        "startPhoneTime": {
+            "bsonType": "date"
+        },
         "startTime": {
             "bsonType": "date"
         }
@@ -28,7 +43,8 @@
         "_id",
         "owner_id",
         "isNowUsingProhibitedApp",
-        "appPackageName"
+        "appPackageName",
+        "appName"
     ],
     "title": "CurState"
 }

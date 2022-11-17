@@ -1,0 +1,24 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "date": {
+            "bsonType": "date"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "usageSec": {
+            "bsonType": "long"
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "date",
+        "usageSec"
+    ],
+    "title": "PhoneUsageRecord"
+}
