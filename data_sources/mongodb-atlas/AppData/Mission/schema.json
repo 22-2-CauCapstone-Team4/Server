@@ -24,9 +24,6 @@
             "bsonType": "bool",
             "default": false
         },
-        "kind": {
-            "bsonType": "string"
-        },
         "name": {
             "bsonType": "string"
         },
@@ -47,7 +44,6 @@
         "_id",
         "owner_id",
         "name",
-        "kind",
         "isActive",
         "isRepeated",
         "type"

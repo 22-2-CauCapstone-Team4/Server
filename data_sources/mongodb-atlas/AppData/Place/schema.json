@@ -14,6 +14,9 @@
         },
         "owner_id": {
             "bsonType": "string"
+        },
+        "range": {
+            "bsonType": "float"
         }
     },
     "required": [
@@ -22,7 +25,8 @@
         "name",
         "address",
         "lat",
-        "lng"
+        "lng",
+        "range"
     ],
     "title": "Place"
 }

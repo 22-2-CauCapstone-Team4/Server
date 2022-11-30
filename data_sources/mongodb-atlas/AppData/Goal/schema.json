@@ -22,8 +22,7 @@
             "bsonType": "string"
         },
         "placeCnt": {
-            "bsonType": "int",
-            "default": 0
+            "bsonType": "long"
         },
         "userCnt": {
             "bsonType": "int",
@@ -35,10 +34,10 @@
         "owner_id",
         "name",
         "missionCnt",
-        "placeCnt",
         "userCnt",
         "nowDoingMissionCnt",
-        "nowGivingUpCnt"
+        "nowGivingUpCnt",
+        "placeCnt"
     ],
     "title": "Goal"
 }
