@@ -1,0 +1,23 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "mission": {
+            "bsonType": "objectId"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "state": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "state",
+        "owner_id"
+    ],
+    "title": "TodayMission"
+}

@@ -1,0 +1,8 @@
+{
+    "mission": {
+        "ref": "#/relationship/mongodb-atlas/AppData/Mission",
+        "source_key": "mission",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}
