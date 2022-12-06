@@ -16,15 +16,27 @@
         "endPhoneTime": {
             "bsonType": "date"
         },
-        "endTIme": {
-            "bsonType": "date"
+        "isNowDoingMission": {
+            "bsonType": "bool"
         },
-        "endTime": {
-            "bsonType": "date"
+        "isNowGivingUp": {
+            "bsonType": "bool"
         },
         "isNowUsingProhibitedApp": {
             "bsonType": "bool",
             "default": false
+        },
+        "lastBreakTime": {
+            "bsonType": "date"
+        },
+        "lastBreaktime": {
+            "bsonType": "date"
+        },
+        "mission": {
+            "bsonType": "objectId"
+        },
+        "missionStartTime": {
+            "bsonType": "date"
         },
         "owner_id": {
             "bsonType": "string"
@@ -34,9 +46,6 @@
         },
         "startPhoneTime": {
             "bsonType": "date"
-        },
-        "startTime": {
-            "bsonType": "date"
         }
     },
     "required": [
@@ -44,7 +53,9 @@
         "owner_id",
         "isNowUsingProhibitedApp",
         "appPackageName",
-        "appName"
+        "appName",
+        "isNowDoingMission",
+        "isNowGivingUp"
     ],
     "title": "CurState"
 }

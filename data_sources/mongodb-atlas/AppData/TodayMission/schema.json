@@ -4,6 +4,9 @@
         "_id": {
             "bsonType": "objectId"
         },
+        "extraState": {
+            "bsonType": "string"
+        },
         "mission": {
             "bsonType": "objectId"
         },

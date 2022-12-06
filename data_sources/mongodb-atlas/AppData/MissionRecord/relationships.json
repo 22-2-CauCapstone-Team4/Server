@@ -1,4 +1,10 @@
 {
+    "heartIds": {
+        "ref": "#/relationship/mongodb-atlas/AppData/UserInfo",
+        "source_key": "heartIds",
+        "foreign_key": "_id",
+        "is_list": true
+    },
     "mission": {
         "ref": "#/relationship/mongodb-atlas/AppData/Mission",
         "source_key": "mission",

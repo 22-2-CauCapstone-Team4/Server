@@ -26,6 +26,9 @@
         "owner_id": {
             "bsonType": "string"
         },
+        "type": {
+            "bsonType": "string"
+        },
         "usageSec": {
             "bsonType": "int",
             "default": 0

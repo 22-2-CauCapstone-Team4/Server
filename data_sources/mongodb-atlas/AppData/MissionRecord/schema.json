@@ -1,0 +1,92 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "breakTimes": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "date"
+            }
+        },
+        "comment": {
+            "bsonType": "string"
+        },
+        "endTime": {
+            "bsonType": "int"
+        },
+        "giveUpApp": {
+            "bsonType": "object",
+            "properties": {
+                "icon": {
+                    "bsonType": "string"
+                },
+                "name": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [
+                "name",
+                "icon"
+            ],
+            "title": "GiveUpAppEmbedded"
+        },
+        "giveUpTime": {
+            "bsonType": "int"
+        },
+        "heartIds": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "heartNum": {
+            "bsonType": "int",
+            "default": 0
+        },
+        "mission": {
+            "bsonType": "objectId"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "prohibitedAppUsages": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "endTime": {
+                        "bsonType": "int"
+                    },
+                    "name": {
+                        "bsonType": "string"
+                    },
+                    "startTime": {
+                        "bsonType": "int"
+                    }
+                },
+                "required": [
+                    "name",
+                    "startTime"
+                ],
+                "title": "AppUsageEmbedded"
+            }
+        },
+        "startTime": {
+            "bsonType": "date"
+        },
+        "totalProhibitedAppUsageSec": {
+            "bsonType": "int",
+            "default": 0
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id",
+        "startTime",
+        "totalProhibitedAppUsageSec",
+        "heartNum"
+    ],
+    "title": "MissionRecord"
+}
