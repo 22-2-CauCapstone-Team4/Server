@@ -1,0 +1,14 @@
+{
+    "items": {
+        "ref": "#/relationship/mongodb-atlas/AppData/UserInfo",
+        "source_key": "items",
+        "foreign_key": "_id",
+        "is_list": true
+    },
+    "receivedRequests": {
+        "ref": "#/relationship/mongodb-atlas/AppData/UserInfo",
+        "source_key": "receivedRequests",
+        "foreign_key": "_id",
+        "is_list": true
+    }
+}

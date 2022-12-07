@@ -1,0 +1,27 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "items": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "owner_id": {
+            "bsonType": "string"
+        },
+        "receivedRequests": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id"
+    ],
+    "title": "Friend"
+}

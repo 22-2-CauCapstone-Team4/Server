@@ -13,6 +13,6 @@ exports = async function (changeEvent) {
       { name: newGoal.name, $not: { _id: id } },
       { $inc: { userCnt: 1 } }
     ),
-    Goals.updateOne({ _id: id }, { $set: { userCnt: cnt + 1 } }),
+    Goals.updateOne({ _id: id }, { $set: { userCnt: cnt } }),
   ]);
 };
