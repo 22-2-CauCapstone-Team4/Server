@@ -7,7 +7,7 @@
         "breakTimes": {
             "bsonType": "array",
             "items": {
-                "bsonType": "date"
+                "bsonType": "int"
             }
         },
         "comment": {
